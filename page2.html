@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+        body
+        {
+            background:url('Pictures/3.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0px;
+            padding: 0px;
+        }
+		ol{
+		list-style-type: none;
+		margin: 0px;
+		padding: 0px;
+		overflow: hidden;
+		background: rgba(0,0,0,0.3)
+        }
+
+		li {
+		float: left;
+	    }
+	
+		li a{
+		display: block;
+		color: black;
+		text-align: center;
+		padding: 20px 10px;
+		text-decoration: none;
+		font-family:verdana;
+		font-size:20px;
+		}
+	
+		li a:hover:not(.active) {
+		background-color: skyblue;
+		transition:bottom .3s ease-in-out
+		}
+		.active {
+		background-color: blue ;
+		}
+		#header_logo{
+		display: inline-block;
+		vertical-align: top;
+		width: 1px;
+		height: 1px;
+		margin-right: 1px;
+		margin-top: 1px;
+		}
+		.container {
+    position: relative;
+    width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+</style>
+<title> Musiclicious | Your Mood Matters</title>
+<link rel="shortcut icon" href="http://sstatic.net/stackoverflow/img/favicon.ico">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+				<ol>
+					<div class="wrapper">
+					<div id="header_logo">
+					<a href="#">
+					<img src="Pictures/musiclicious1.png">
+					</a>
+					</div>
+					</div>
+					<li style="float:right"><a href="">About me!</a></li>
+					<li style="float:right"><a href="">Sign up</a></li>
+				</ol>
+<p style="font-size:450%;font-family:courier;text-align:center;color:black"><b>So How are you feeling today?</b></p>
+
+<center><img src="Pictures/mood.png" width="900" height="350" align="top" alt="Moods" usemap="#moods" />
+<map name="moods">
+	<area shape="rect" coords="0,0,550,240" href="#" alt="Inspire me!"/>
+	<area shape="rect" coords="0,255,546,747" href="#" alt="I am happy!"/>
+	<area shape="rect" coords="383,424,857,784" href="#" alt="Inspire me!"/>
+	<area shape="rect" coords="545,0,830,370" href="#" alt="Inspire me!"/>
+	</map>
+	</center>
+</div>
+<div class="container">
+  <img src="Pictures/mood 1" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">John Doe</div>
+  </div>
+</div>
+  
+
+</body>
+</html>
